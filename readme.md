@@ -1,0 +1,2 @@
+# Cat API with CORS support
+This is a fork of [https://replit.com/@haroldsikkema/Cat-API](https://replit.com/@haroldsikkema/Cat-API) that adds [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) support. This allows us to request data from the API regardless of origin. This allows us to decouple the frontend from the backend. E.g. the frontend pages could be hosted on a different domain from this one, and yet the would still be able to use the API endpoints. 
