@@ -1,15 +1,7 @@
 // make it easier to select elements
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
-
-/* If we are inside an iFrame add a link to open a separate tab */
-if (window.frameElement) {
-  $('footer').innerHTML = `Please open a <a>separate tab</a>`
-  $('footer a').addEventListener('click', () => {
-    window.open('https://my-cats.haroldsikkema.repl.co', '_blank')
-  })
-  $$('section').forEach(form => { form.style.display = 'none' })
-}
+ 
 
 // toggle between the two forms
 const toggleForms = () => {
